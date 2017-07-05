@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GEAR : Add</title>
+</head>
+<body>
+  <h1>Add a new piece of gear:</h1>
+  <form class="add-form">
+    <fieldset>
+      <h3>What is this thing?</h3>
+      <label for="make">Make:</label>
+      <input type="text" id="make" name="make" value="" placeholder="i.e. Shure" autofocus><br>
+      <label for="model">Model:</label>
+      <input type="text" id="model" name="model" value="" placeholder="SM-58"><br>
+      <label for="type">Type:</label>
+      <input type="text" id="type" name="type" value="" placeholder="mic"><br>
+      <label for="select">Purchased New or Used?</label>
+      <select class="" id="select" name="purchased">
+        <option value="new">New</option>
+        <option value="used">Used</option>
+      </select>
+    </fieldset>
+    <fieldset class="properties">
+      <h3>Add some properties for this item:</h3>
+      <input type="text" name="property" value="" placeholder="i.e. dynamic">
+      <button type="button" name="button" id="add" onclick="addInfo()">+ More</button><br>
+    </fieldset>
+    <input type="submit" name="submit" value="Add This Item">
+  </form>
+  <script src="static/scripts.js" charset="utf-8"></script>
+</body>
+</html>
