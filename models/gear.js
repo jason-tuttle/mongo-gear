@@ -14,4 +14,6 @@ const gearSchema = new mongoose.Schema({
 
 const Gear = mongoose.model('Gear', gearSchema);
 
+mongoose.connection.close();
+
 module.exports = Gear;

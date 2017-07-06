@@ -1,3 +1,4 @@
+
 function addInfo() {
   const props = document.querySelector(".properties");
   const addButton = document.getElementById('add')
@@ -11,10 +12,12 @@ function addInfo() {
   newProp.focus();
 }
 
+
 (function() {
-  var addForm = document.querySelector(".add-form");
+  const addForm = document.querySelector("form");
+
   addForm.addEventListener('submit', function(event) {
-    event.preventDevault();
+    event.preventDefault();
     var request = new XMLHttpRequest();
     request.open("POST", "/add");
     request.send(new FormData(addForm));

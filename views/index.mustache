@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GEAR</title>
+</head>
+<body>
+  <h1>My Gear</h1>
+  {{#gear}}
+    <div class="gear-attr"><h3>{{make}}&nbsp;{{model}}</h3></div>
+    <div class="gear-attr">{{type}}, bought {{purchased}}.</div>
+    <div class="gear-attr">
+      {{#property}}
+        {{.}}<br>
+      {{/property}}
+    </div>
+  {{/gear}}
+</body>
+</html>
